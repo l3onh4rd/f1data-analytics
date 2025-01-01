@@ -13,3 +13,9 @@ python main.py
 ## Which data is used as basis?
 
 The csv data of the [f1db repository](https://github.com/f1db/f1db) is the basis for the analytics. The data files are not part of the repository. Download the data yourself and put in a folder named 'data' to your copy.
+
+## How to use requirements.txt file?
+
+```console
+pip install -r requirements.txt
+```
