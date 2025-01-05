@@ -7,7 +7,10 @@ warnings.filterwarnings('ignore')
 def gen_con_points_plot(x, y, teams, year):
     plt.clf()
     for y_values, team in zip(y, teams):
-        plt.plot(x, y_values, label=team, color=TEAM_COLOR_DICT[team])
+
+        color = TEAM_COLOR_DICT[team] if team in TEAM_COLOR_DICT else 'black'
+
+        plt.plot(x, y_values, label=team, color=color)
     common(year)
     plt.ylabel('Points', fontsize=20)
     plt.subplots_adjust(bottom=.15, left=.15)
