@@ -1,13 +1,14 @@
 from DataExtractor import DataExtractor
+from Standings import Standings
 from plot import con_points_plot
 
-class ConstructorAnalytics:
+class ConstructorAnalytics(Standings):
     def __init__(self, year):
         self.__year = year
 
     def set_year(self, year):
         self.__year = year
-
+    
     def get_constructor_standings_data(self):
         data_extractor = DataExtractor()
         # read raw csv data
