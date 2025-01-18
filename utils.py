@@ -25,5 +25,9 @@ TEAM_COLOR_DICT = {
     'kick-sauber': COLOR_SAUBER
 }
 
+DRIVER_COLOR_DICT = {
+    'max-verstappen': COLOR_REDBULL
+}
+
 def get_current_date_and_time():
     return datetime.datetime.now().strftime('%d.%m.%Y %H:%M:%S')
