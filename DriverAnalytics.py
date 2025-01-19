@@ -21,13 +21,20 @@ class DriverAnalytics(Standings):
         rounds = season_driver_points['round'].max()
         # generate x values depending on number of races
         x = list(range(1, rounds + 1))
-        # get a list of the teams for the constructors championchip
-        drivers = season_driver_points[season_driver_points['round'] == 1]['driverId'].to_list()
-
-        # generating y values (points for each team after each race)
+        # get a list of the drivers for the drivers championchip
+        drivers = season_driver_points['driverId'].unique().tolist()
+        # generating y values (points for each driver after each race)
         y = []
-        for driver in drivers:
-            y += [season_driver_points[season_driver_points['driverId'] == driver]['points'].to_list()]
+        for idx, _ in enumerate(drivers):
+            y.append([])
+
+        for race in x:
+            for idx, driver in enumerate(drivers):
+                point = season_driver_points[(season_driver_points['driverId'] == driver) & (season_driver_points['round'] == race)]['points']
+                if len(point) == 0:
+                    y[idx].append(None)
+                else:
+                    y[idx].append(season_driver_points[(season_driver_points['driverId'] == driver) & (season_driver_points['round'] == race)]['points'].to_list()[0])
 
         return x, y, drivers
     
