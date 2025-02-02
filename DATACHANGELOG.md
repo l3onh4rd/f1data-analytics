@@ -4,4 +4,4 @@
 
 ### data updates
 
-- 2024 Italian GP update ([CSV data](https://github.com/f1db/f1db/releases/tag/v2024.16.0))
+- 2025 0.3 update ([CSV data](https://github.com/f1db/f1db/releases/tag/v2025.0.3))

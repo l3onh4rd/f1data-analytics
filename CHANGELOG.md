@@ -4,4 +4,6 @@
 
 ### Features
 
+- generating constructors championchip chart (for each season)
+- generating drivers championchip chart (for each season)
 - initial project setup
