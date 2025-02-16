@@ -26,7 +26,26 @@ TEAM_COLOR_DICT = {
 }
 
 DRIVER_COLOR_DICT = {
-    'max-verstappen': COLOR_REDBULL
+    'max-verstappen': COLOR_REDBULL,
+    'liam-lawson': COLOR_REDBULL,
+    'lando-norris': COLOR_MCLAREN,
+    'oscar-piastri': COLOR_MCLAREN,
+    'charles-leclerc': COLOR_FERRARI,
+    'lewis-hamilton': COLOR_FERRARI,
+    'george-russell': COLOR_MERCEDES,
+    'andrea-kimi-antonelli': COLOR_MERCEDES,
+    'fernando-alonso': COLOR_ASTONMARTIN,
+    'lance-stroll': COLOR_ASTONMARTIN,
+    'oliver-bearman': COLOR_HAAS,
+    'esteban-ocon': COLOR_HAAS,
+    'jack-doohan': COLOR_ALPINE,
+    'pierre-gasly': COLOR_ALPINE,
+    'yuki-tsunoda': COLOR_RB,
+    'isack-hadjar': COLOR_RB,
+    'nico-hulkenberg': COLOR_SAUBER,
+    'gabriel-bortoleto': COLOR_SAUBER,
+    'carlos-sainz-jr': COLOR_WILLIAMS,
+    'alexander-albon': COLOR_WILLIAMS,
 }
 
 def get_current_date_and_time():
